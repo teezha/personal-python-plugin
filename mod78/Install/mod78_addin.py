@@ -1,5 +1,6 @@
 import arcpy
 import pythonaddins
+import os
 
 class btnHelp(object):
     """Implementation for mod78_addin.btnHelp (Button)"""
@@ -7,7 +8,7 @@ class btnHelp(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pass
+        pythonaddins.MessageBox("Drop Down Box: Select Crimes based on Region Chosen\nSelect Crimes Tool: Use mouse to draw rectangle on map\nAdd Table and Export: Adds Summary table to layout and Exports to jpg\nUpdate Name and Date: Adds Author name and today's date","Help")
 
 class btnSumTable(object):
     """Implementation for mod78_addin.btnSumTable (Button)"""
@@ -31,8 +32,8 @@ class cbPolZone(object):
         self.items = ["item1", "item2"]
         self.editable = True
         self.enabled = True
-        self.dropdownWidth = 'WWWWWW'
-        self.width = 'WWWWWW'
+        self.dropdownWidth = 'WWWWWWWWWWWW'
+        self.width = 'WWWWWWWWWWWW'
     def onSelChange(self, selection):
         pass
     def onEditChange(self, text):
