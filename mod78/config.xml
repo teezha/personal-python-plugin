@@ -1,0 +1,16 @@
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Name>Python Addin</Name><AddInID>{0a518897-720c-42db-94d5-d0f459c30bef}</AddInID><Description>lastfinalpython</Description><Version>0.1</Version><Image /><Author>toby zhang</Author><Company>bcit.gist</Company><Date>02/27/2017</Date><Targets><Target name="Desktop" version="10.1" /></Targets><AddIn language="PYTHON" library="mod78_addin.py" namespace="mod78_addin"><ArcMap>
+    <Commands>
+        <ComboBox caption="Police Zone" category="Python Addin" class="cbPolZone" id="mod78_addin.cbPolZone" itemSizeString="WWWWWW" message="" rows="4" sizeString="WWWWWW" tip="Selects a region"><Help heading="Select Location">Allows the user to select a location to highlight crimes</Help></ComboBox>
+        <Tool caption="To Polygon" category="Python Addin" class="toolToPolygon" id="mod78_addin.toolToPolygon" image="" message="" tip="select a rectangle to convert to polygon"><Help heading="To Polygon">select a rectangle to convert to polygon</Help></Tool>
+        <Button caption="Create Summary JPG" category="Python Addin" class="btnSumTable" id="mod78_addin.btnSumTable" image="" message="" tip="Creates a summary table of selected crimes in the layout and exports to a jpg"><Help heading="Create JPG">Creates a summary table of selected crimes in the layout and exports to a jpg</Help></Button>
+        <Button caption="Update User Info" category="Python Addin" class="btnUpdate" id="mod78_addin.btnUpdate" image="" message="" tip="Updates the author and current date information on layout"><Help heading="Update">Updates the author and current date information on layout</Help></Button>
+        <Button caption="Help" category="Python Addin" class="btnHelp" id="mod78_addin.btnHelp" image="" message="" tip="Open Help....."><Help heading="Help">Opens help information........</Help></Button>
+        </Commands>
+    <Extensions>
+        </Extensions>
+    <Toolbars>
+        <Toolbar caption="customized police solution" category="Python Addin" id="mod78_addin.tbMain" showInitially="true"><Items><ComboBox refID="mod78_addin.cbPolZone" /><Tool refID="mod78_addin.toolToPolygon" /><Button refID="mod78_addin.btnSumTable" /><Button refID="mod78_addin.btnUpdate" /><Button refID="mod78_addin.btnHelp" /></Items></Toolbar>
+        </Toolbars>
+    <Menus>
+        </Menus>
+    </ArcMap></AddIn></ESRI.Configuration>
