@@ -138,7 +138,7 @@ class Help(object):
         self.enabled = True
         self.checked = False
     def onClick(self):
-        pythonaddins.MessageBox('Drop Down Box: Select the Crimes based on Region Chosen'+'\n'+'Select Crimes Tool: Use the mouse to draw rectangles on map'+'\n'+'Add Table and Export: Adds the summary table to layout and Exports to pdf'+'\n'+'Update Name and Date: Updates author name and current date', 'HELP',0)
+        pythonaddins.MessageBox('Drop Down Box: Select the Crimes based on Region Chosen'+'\n'+'Select Crimes Tool: Use the mouse to draw rectangles on map'+'\n'+'Add Table and Export: Adds the summary table to layout and Exports to pdf'+'\n'+'Update Name and Date: Updates author name and current date', 'Help', 0)
 
 class SelectCrimes(object):
     def __init__(self):
